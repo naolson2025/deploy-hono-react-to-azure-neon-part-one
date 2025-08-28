@@ -1,0 +1,6 @@
+@import 'tailwindcss';
+@import 'tailwindcss';
+@plugin "daisyui" {
+  themes: dim --default;
+  exclude: rootscrollgutter;
+}

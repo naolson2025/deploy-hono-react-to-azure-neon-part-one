@@ -1,0 +1,37 @@
+http://localhost:3000/api/todos
+
+### Sign up
+POST http://localhost:3000/api/auth/sign-up/email
+Content-Type: application/json
+
+{
+  "name": "nick",
+  "email": "no@no.com",
+  "password": "password123"
+}
+
+
+### Sign in
+POST http://localhost:3000/api/auth/sign-in/email
+Content-Type: application/json
+
+{
+  "email": "no@no.com",
+  "password": "password123"
+}
+
+### Get todos
+GET http://localhost:3000/api/todos
+
+
+### create todo
+POST http://localhost:3000/api/todos
+Content-Type: application/json
+
+{
+  "title": "bake cookies",
+  "description": "oven at 350 degrees"
+}
+
+### delete todo
+DELETE http://localhost:3000/api/todos/2456b8e2-2232-4a12-9b2a-392de198ce1c
