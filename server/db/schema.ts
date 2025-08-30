@@ -13,6 +13,7 @@ export const todos = pgTable('todos', {
     .notNull()
     .references(() => user.id, { onDelete: 'cascade' }),
   title: varchar({ length: 500 }).notNull(),
+  subtitle: varchar({ length: 500 }),
   description: varchar({ length: 1000 }),
   completed: boolean().default(false),
   createdAt: timestamp({ withTimezone: true }).defaultNow(),
